@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\Abinaya\Downloads\archive (3).zip")
+df = pd.read_csv("archive (3).zip")
 
 # Preview column names
 print("Columns in dataset:", df.columns.tolist())
@@ -104,4 +104,5 @@ if 'type' in df.columns and 'duration_int' in df.columns:
     plt.xlabel('Duration (minutes)')
     plt.ylabel('Count')
     plt.tight_layout()
+
     plt.show()
